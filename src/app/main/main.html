@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>OMDB</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <input id="theSearch" ng-model="vm.searchParam" placeholder="movie name" type="text" ngTrim="true" class="form-control"/>
+                <button class="btn btn-primary" ng-click="vm.fetch()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4" movie-poster ng-repeat="movie in vm.movieResult"></div>
+    </div>
+
+</div>
